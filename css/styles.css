@@ -3,10 +3,9 @@ body {
     height: 100vh; 
     overflow: hidden; 
     background-image: url(https://free-vectors.net/_ph/6/198679543.jpg);
-    background: linear-gradient(to bottom, #89cff0, #03b61b);
-    background-size: cover, cover;
-    background-position: center, center;
-
+    background-size: cover;
+    background-position: center;
+    
 }
 .sky {
     position: relative;
