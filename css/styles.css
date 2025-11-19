@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    overflow: hidden; 
+    background-image: url(https://free-vectors.net/_ph/6/198679543.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sky {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+}
+.bird {
+    position: absolute;
+    width: 6vw;
+    top: 40vh;
+    left: 10vh;
+    transform: scaleX(-1);
+    rotate: 20deg;
+
+    animation: Bird 10s linear infinite;
+}
+.tree {
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    height: 800px;
+    width: 650px;
+    z-index: 2;
+    animation: 3s tree linear infinite;
+}
+@keyframes Bird {
+    0% {
+        left: 10vh;
+        top: 30vh;
+        transform: scaleX(-1);
+    }
+    25% {
+        left: 26vw;
+        top: 30vh;
+        transform: scaleX(-1);
+    }
+    49% {
+        left: 52vw;
+        top: 30vh;
+        transform: scaleX(-1);
+        rotate: 20deg;        
+    }
+    50% {
+        left: 52vw;
+        top: 30vh;
+        transform: scaleX(1);
+        rotate: -20deg;
+    }
+    51% {
+        left: 52vw;
+        top: 30vh;
+        transform: scaleX(1);
+        rotate: -20deg;
+    }
+    75% {
+        left: 26vw;
+        top: 30vh;
+        transform: scaleX(1);
+    }
+    99% {
+        left: 10vh;
+        top: 30vh;
+        transform: scaleX(1);
+        rotate: -20deg;
+    }
+    100% {
+        left: 10vh;
+        top: 30vh;
+        transform: scaleX(-1);
+    }
+}
+.nest {
+    width: 15vw;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    z-index: 2;
+    animation: 2s nest ease-in-out infinite;
+}
+@keyframes nest {
+    0% {
+        rotate: 0deg ;
+    }
+    33% {
+        rotate: 2deg ;
+    }
+    67% {
+        rotate: -2deg ;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+.sun {
+    position: absolute;
+    top: 2vh;
+    left: 5vh;
+    width: 10vw;
+    animation: 2.5s sun linear infinite;
+}
+@keyframes sun {
+    0% {
+    }
+    33% {
+        rotate: 120deg;
+        transform: translate(1.3);
+    }
+    67% {
+        rotate: 240deg;
+        transform: translate(1.25);
+    }
+    100% {
+        rotate: 360deg;
+        transform: translate(1);
+    }
+}
+@keyframes tree {
+    0%{
+        transform: skewX(0deg);
+    }
+    33%{
+        transform: skewX(1deg);
+    }
+    67%{
+        transform: skew(0.5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
